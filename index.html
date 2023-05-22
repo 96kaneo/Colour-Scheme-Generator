@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Colour Scheme Generator</h1>
+        <form id="get-scheme-form">
+            <input class="seed-colour" id="seed-colour" type="color" />
+            <div class="custom-select">
+                <select class="scheme" name="scheme" id="scheme">
+                    <option value="0">Select Scheme</option>
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome Dark</option>
+                    <option value="monochrome-light">Lonochrome Light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic Complement</option>
+                    <option value="triad">trial</option>
+                    <option value="quad">Quad</option>
+                </select>
+            </div>
+            <button class="get-btn" id="get-btn">Get colour scheme</button>
+        </form>
+        <div class="grid" id="grid">
+        </div>
+        <script src="index.js"></script>
+</body>
+
+</html>
